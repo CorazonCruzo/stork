@@ -16,7 +16,7 @@ const routeInfos = [
         component: () => import('./components/UserCard.vue')    },
     { 
         path: '/:pathMatch(.*)*',
-        redirect: '/list'
+        redirect: '/list/1'
     },
 ]
     

@@ -43,7 +43,6 @@ export default {
     },
     components: { Pagination },
     mounted() {
-        console.log(this.paramsId, 'this.paramsId');
         store.dispatch('GET_USERS', this.paramsId).then(() => {
             this.users = store.state.users;
         });
